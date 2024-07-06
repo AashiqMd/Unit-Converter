@@ -1,31 +1,35 @@
 <html>
     <head>
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div id="container-top">
-            <h2 id="main-header">Metric/Imperial Unit conversion</h2>
-            <div>
-                <input type="text" id="input-ele">
+        <div class="container">
+            <div class="col1">
+                <h3 class="headers">HOME</h3>
+                <div class="blackbox">
+                    <p id="home">0</p>
+                </div>
+                <div class="scorebox">
+                    <div type=button class="bbox" onclick="updateh1()">+1</div>
+                    <div type=button class="bbox" onclick="updateh2()">+2</div>
+                    <div type=button class="bbox" onclick="updateh3()">+3</div>
+                </div>
             </div>
-            <div>
-                <button id="convert-btn">Convert</button>
+            <div class="col2">
+                <h3 class="headers">GUEST</h3>
+                <div class="blackbox">
+                    <p id="guest">0</p>
+                </div>
+                <div class="scorebox">
+                    <div type=button class="bbox" onclick="updateg1()">+1</div>
+                    <div type=button class="bbox" onclick="updateg2()">+2</div>
+                    <div type=button class="bbox" onclick="updateg3()">+3</div>
+                </div>
             </div>
         </div>
-        <div id="container-bottom">
-            
-            <div class="metric-div" id="length-ele">
-                <p class="metric-div-head">Length (Meter/Feet)</p>
-                <p class="metric-div-body" id="length-display-ele">0 meters = 0 feet | 0 feet = 0 meters</p>
-            </div>
-            <div class="metric-div" id="volume-ele">
-                <p class="metric-div-head">Volume (Liters/Gallons)</p>
-                <p class="metric-div-body" id="volume-display-ele">0 liters = 0 gallons | 0 gallons = 0 liters</p>
-            </div>
-            <div class="metric-div" id="mass-ele">
-                <p class="metric-div-head">Mass (Kilograms/Pounds)</p>
-                <p class="metric-div-body" id="mass-display-ele">0 kilos = 0 pounds | 0 pounds = 0 kilos</p>
-            </div>
+        <div class="container2">
+            <div class="newGame" type="button" onClick="newGame()">NEW GAME</div>
         </div>
         <script src="index.js"></script>
     </body>
